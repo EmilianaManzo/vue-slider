@@ -23,7 +23,8 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 
 
 ### BONUS 3
-1. 
+1. creo un flag di default true e lo metto come condizione per il loop delle immagini nel setInterval
+2. creo gli eventi nel contenitore contenente tutto con mouseenter (dove il flag diventa false ) e mouseleave (dove il flag diventa true)
 
 
 ### BONUS 4 

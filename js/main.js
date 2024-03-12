@@ -35,7 +35,9 @@ createApp({
           },
         ],
 
-        counter : 0
+        counter : 0,
+        isAutoPlay : true,
+        isDirection: true  
 
       }
     },
@@ -52,14 +54,21 @@ createApp({
         },
 
         playLoop(){
-          setInterval( ()=>this.nextPrev(true),1000)
+          setInterval( ()=>{
+            this.isDirection ? this.isAutoPlay : !this.isAutoPlay; 
+
+            this.isAutoPlay ?  this.nextPrev(true) : '';
+
+
+
+          },1000)
           
         }
       },
 
       mounted(){
         this.playLoop()
-        
+
       }
     
 
