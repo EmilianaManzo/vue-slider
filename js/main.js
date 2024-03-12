@@ -41,10 +41,27 @@ createApp({
     },
 
     methods:{
-      nextPrev(isNext){
-        isNext ? this.counter++ : this.counter-- 
+        nextPrev(isNext){
+          isNext ? this.counter++ : this.counter-- 
+
+          if (this.counter === this.images.length){
+            this.counter = 0; 
+          }else if  (this.counter < 0){
+            this.counter = this.images.length -1
+          }
+        },
+
+        playLoop(){
+          setInterval( ()=>this.nextPrev(true),1000)
+          
+        }
+      },
+
+      mounted(){
+        this.playLoop()
+        
       }
-    }
+    
 
     
 

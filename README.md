@@ -16,3 +16,17 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 
 ### BONUS 1 
 1. al click sulla thumb il contatore sarà uguale all'indice e verrà visualizzata l'immagine grande.
+
+### BONUS 2
+1. creo una nuova funzione con un setInterval che richiama la funzione nextPrev ad un intervallo di 2 sec 
+2. richiamo la funzione loop in mounted
+
+
+### BONUS 3
+1. 
+
+
+### BONUS 4 
+1. 
+
+
