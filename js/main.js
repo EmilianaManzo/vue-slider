@@ -37,7 +37,7 @@ createApp({
 
         counter : 0,
         isAutoPlay : true,
-        isDirection: true  
+        isDirectionright: true  
 
       }
     },
@@ -55,9 +55,13 @@ createApp({
 
         playLoop(){
           setInterval( ()=>{
-            this.isDirection ? this.isAutoPlay : !this.isAutoPlay; 
 
-            this.isAutoPlay ?  this.nextPrev(true) : '';
+            if (this.isAutoPlay){
+              this.nextPrev(this.isDirectionright)
+            }
+            
+            
+            // this.isAutoPlay ?  this.nextPrev(this.isDirectionright) : '';
 
 
 
